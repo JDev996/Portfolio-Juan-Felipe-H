@@ -1,0 +1,63 @@
+/* Estilos para el portafolio profesional */
+:root{
+    --color-fondo: #0f172a;
+    --color-tarjeta: #1e293b;
+    --color-texto-principal: #f8fafc;
+    --color-texto-secundario: #94a3b8;
+    --color-primario: #6366f1;
+    --color-secundario: #06b6d4;
+    --borde-redondeado:16px;
+}
+
+*{
+    margin: 0; /* Esto asegura que todos los elementos tengan un margen y relleno de 0, eliminando el espacio predeterminado que los navegadores aplican a los elementos. */
+    padding: 0; /* Esto asegura que todos los elementos tengan un margen y relleno de 0, eliminando el espacio predeterminado que los navegadores aplican a los elementos. */
+    box-sizing: border-box; /* Esto asegura que el tamaño de los elementos incluya el relleno y el borde, lo que facilita el diseño y la alineación de los elementos en la página. */
+}
+
+html{
+    scroll-behavior: smooth; /* Esto permite que la página se desplace suavemente cuando se hace clic en un enlace de anclaje. */
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Esto establece la fuente predeterminada para todo el cuerpo del documento. */
+    background-color: var(--color-fondo); /* Esto establece el color de fondo del cuerpo del documento utilizando la variable CSS definida anteriormente. */
+    color: var(--color-texto-principal); /* Esto establece el color del texto del cuerpo del documento utilizando la variable CSS definida anteriormente. */
+    line-height: 1.7; /* Esto establece la altura de línea predeterminada para el texto del cuerpo del documento, lo que mejora la legibilidad. */
+    padding: 0 20px; /* Esto agrega un relleno horizontal de 20 píxeles a todo el cuerpo del documento, lo que evita que el contenido toque los bordes de la ventana del navegador. */
+}
+
+hr{
+    display: none; /* Esto oculta los elementos <hr> en la página, lo que puede ser útil si no se desea mostrar líneas horizontales. */
+}
+
+@media (max-width: 992px) {
+    body{
+        display: grid; /* Esto cambia el diseño del cuerpo del documento a un sistema de cuadrícula en pantallas más pequeñas, lo que permite una mejor organización del contenido. */
+        grid-template-columns: 320px 1fr; /* Esto establece que la cuadrícula tenga una sola columna en pantallas más pequeñas, lo que facilita la visualización del contenido en dispositivos móviles. */
+        gap: 40px; /* Esto agrega un espacio de 20 píxeles entre los elementos de la cuadrícula, lo que mejora la separación visual del contenido. */
+        max-width: 1250px; /* Esto limita el ancho máximo del cuerpo del documento a 1250 píxeles, lo que mejora la legibilidad en pantallas más grandes. */
+        margin: 40px auto; /* Esto centra el cuerpo del documento horizontalmente en la ventana del navegador y agrega un margen superior e inferior de 40 píxeles. */
+        align-items: start; /* Esto alinea los elementos de la cuadrícula al inicio del contenedor, lo que asegura que el contenido se muestre en la parte superior de la página. */
+    }
+
+    header{
+        position: sticky; /* Esto hace que el encabezado permanezca visible en la parte superior de la ventana del navegador mientras se desplaza por la página. */
+        top: 40px; /* Esto establece la posición del encabezado en la parte superior de la ventana del navegador. */
+    }
+}
+
+header{
+    background-color: linear-gradient(135deg, #1e293b, #0f172a); /* Esto establece un fondo degradado para el encabezado, lo que mejora la apariencia visual del sitio web. */
+    padding: 30px; /* Esto agrega un relleno al encabezado, lo que mejora la separación visual del contenido. */
+    border-radius: var(--borde-redondeado); /* Esto aplica un borde redondeado al encabezado utilizando la variable CSS definida anteriormente. */
+    border: 1px solid rgba(255, 255, 255, 0.05); /* Esto agrega un borde semitransparente al encabezado, lo que mejora la apariencia visual del sitio web. */
+    box-shadow: 0 10px -5px rgba(0, 0, 0, 0.03); /* Esto agrega una sombra al encabezado, lo que mejora la apariencia visual del sitio web. */
+}
+
+header h1{
+    font-size: 1.8rem; /* Esto establece el tamaño de fuente del encabezado principal, lo que mejora la legibilidad del texto. */
+    color: var(--color-texto-principal); /* Esto establece el color del texto del encabezado principal utilizando la variable CSS definida anteriormente. */
+    margin-bottom: 10px; /* Esto agrega un margen inferior al encabezado principal, lo que mejora la separación visual del contenido. */
+    line-height: 1.2; /* Esto establece la altura de línea del encabezado principal, lo que mejora la legibilidad del texto. */
+}
