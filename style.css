@@ -45,6 +45,11 @@ hr{
         position: sticky; /* Esto hace que el encabezado permanezca visible en la parte superior de la ventana del navegador mientras se desplaza por la página. */
         top: 40px; /* Esto establece la posición del encabezado en la parte superior de la ventana del navegador. */
     }
+
+    footer{
+        grid-column: span 2; /* Esto hace que el pie de página ocupe toda la fila de la cuadrícula en pantallas más pequeñas, lo que mejora la organización del contenido. */
+        margin-top: 20px; /* Esto agrega un margen superior al pie de página, lo que mejora la separación visual del contenido. */
+    }
 }
 
 header{
@@ -60,4 +65,201 @@ header h1{
     color: var(--color-texto-principal); /* Esto establece el color del texto del encabezado principal utilizando la variable CSS definida anteriormente. */
     margin-bottom: 10px; /* Esto agrega un margen inferior al encabezado principal, lo que mejora la separación visual del contenido. */
     line-height: 1.2; /* Esto establece la altura de línea del encabezado principal, lo que mejora la legibilidad del texto. */
+}
+
+header p{
+    color: var(--color-texto-secundario); /* Esto establece el color del texto del párrafo del encabezado utilizando la variable CSS definida anteriormente. */
+    font-size: 1rem; /* Esto establece el tamaño de fuente del párrafo del encabezado, lo que mejora la legibilidad del texto. */
+    margin-bottom: 25px; /* Esto agrega un margen inferior al párrafo del encabezado, lo que mejora la separación visual del contenido. */
+}
+
+nav ul{
+    list-style: none; /* Esto elimina los puntos de viñeta predeterminados de la lista de navegación, lo que mejora la apariencia visual del sitio web. */
+    display: flex; /* Esto establece un diseño flexible para la lista de navegación, lo que permite una mejor organización del contenido. */
+    flex-direction: column; /* Esto establece la dirección de los elementos de la lista de navegación en una columna, lo que mejora la organización del contenido. */
+    gap: 20px; /* Esto agrega un espacio de 20 píxeles entre los elementos de la lista de navegación, lo que mejora la separación visual del contenido. */
+}
+
+nav a{
+    text-decoration: none; /* Esto elimina el subrayado predeterminado de los enlaces de navegación, lo que mejora la apariencia visual del sitio web. */
+    color: var(--color-texto-secundario); /* Esto establece el color del texto de los enlaces de navegación utilizando la variable CSS definida anteriormente. */
+    font-size: 0.95rem; /* Esto establece el tamaño de fuente de los enlaces de navegación, lo que mejora la legibilidad del texto. */
+    font-weight: 600; /* Esto establece el grosor de la fuente de los enlaces de navegación, lo que mejora la legibilidad del texto. */
+    padding: 12px 16px; /* Esto agrega un relleno a los enlaces de navegación, lo que mejora la separación visual del contenido. */
+    border-radius: 8px; /* Esto aplica un borde redondeado a los enlaces de navegación utilizando la variable CSS definida anteriormente. */
+    transition: var(--color-texto-principal); /* Esto agrega una transición suave a los enlaces de navegación, lo que mejora la experiencia del usuario al interactuar con ellos. */
+    display:block; /* Esto hace que los enlaces de navegación se comporten como elementos de bloque, lo que mejora la organización del contenido. */
+    background-color: var(--color-tarjeta); /* Esto establece el color de fondo de los enlaces de navegación utilizando la variable CSS definida anteriormente. */
+    border: 1px solid transparent; /* Esto establece un borde transparente para los enlaces de navegación, lo que mejora la apariencia visual del sitio web. */
+}
+
+nav a:hover{
+    color: var(--color-primario); /* Esto cambia el color del texto de los enlaces de navegación al pasar el cursor sobre ellos, lo que mejora la experiencia del usuario al interactuar con ellos. */
+    background-color: var(--color-tarjeta); /* Esto cambia el color de fondo de los enlaces de navegación al pasar el cursor sobre ellos, lo que mejora la experiencia del usuario al interactuar con ellos. */
+    background-color: var(--color-fondo); /* Esto cambia el color de fondo de los enlaces de navegación al pasar el cursor sobre ellos, lo que mejora la experiencia del usuario al interactuar con ellos. */
+    transform: translateX(8px); /* Esto aplica una transformación de desplazamiento vertical a los enlaces de navegación al pasar el cursor sobre ellos, lo que mejora la experiencia del usuario al interactuar con ellos. */
+}
+
+main{
+    display: flex; /* Esto establece un diseño flexible para el contenido principal, lo que permite una mejor organización del contenido. */
+    flex-direction: column; /* Esto establece la dirección de los elementos del contenido principal en una columna, lo que mejora la organización del contenido. */
+    gap: 40px; /* Esto agrega un espacio de 40 píxeles entre los elementos del contenido principal, lo que mejora la separación visual del contenido. */
+}
+
+section{
+    background-color: var(--color-tarjeta); /* Esto establece el color de fondo del contenido principal utilizando la variable CSS definida anteriormente. */
+    padding: 40px; /* Esto agrega un relleno al contenido principal, lo que mejora la separación visual del contenido. */
+    border-radius: var(--borde-redondeado); /* Esto aplica un borde redondeado al contenido principal utilizando la variable CSS definida anteriormente. */
+    border: 1px solid transparent; /* Esto agrega un borde semitransparente al contenido principal, lo que mejora la apariencia visual del sitio web. */
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.2); /* Esto agrega una sombra al contenido principal, lo que mejora la apariencia visual del sitio web. */
+    scroll-margin-top: 40px; /* Esto agrega un margen de desplazamiento superior al contenido principal, lo que mejora la experiencia del usuario al interactuar con el contenido. */
+}
+
+section h2{
+    font-size: 1.6rem; /* Esto establece el tamaño de fuente del encabezado del contenido principal, lo que mejora la legibilidad del texto. */
+    color: var(--color-texto-secundario); /* Esto establece el color del texto del encabezado del contenido principal utilizando la variable CSS definida anteriormente. */
+    margin-bottom: 25px; /* Esto agrega un margen inferior al encabezado del contenido principal, lo que mejora la separación visual del contenido. */
+    border-bottom: 1px solid rgba(rgb(101, 210, 249, 0.601)); /* Esto agrega un borde inferior al encabezado del contenido principal, lo que mejora la apariencia visual del sitio web. */
+    padding-bottom: 2px; /* Esto agrega un relleno inferior al encabezado del contenido principal, lo que mejora la separación visual del contenido. */
+}
+
+section h3{
+    font-size: 1.15rem; /* Esto establece el tamaño de fuente del subencabezado del contenido principal, lo que mejora la legibilidad del texto. */
+    color: var(--color-primario); /* Esto establece el color del texto del subencabezado del contenido principal utilizando la variable CSS definida anteriormente. */
+    margin-top: 20px; /* Esto agrega un margen inferior al subencabezado del contenido principal, lo que mejora la separación visual del contenido. */
+    margin-bottom: 12px; /* Esto agrega un margen inferior al subencabezado del contenido principal, lo que mejora la separación visual del contenido. */
+}
+
+section p{
+    color: var(--color-texto-secundario); /* Esto establece el color del texto del párrafo del contenido principal utilizando la variable CSS definida anteriormente. */
+    margin-bottom: 15px; /* Esto agrega un margen inferior al párrafo del contenido principal, lo que mejora la separación visual del contenido. */
+}
+
+section p strong{
+    color: var(--color-texto-principal); /* Esto establece el color del texto en negrita del párrafo del contenido principal utilizando la variable CSS definida anteriormente. */
+}
+
+img{
+    border-radius: 50%; /* Esto aplica un borde redondeado al 100% a las imágenes, lo que las hace aparecer como círculos. */
+    border: 2px solid var(--color-texto-secundario); /* Esto agrega un borde sólido de 2 píxeles alrededor de las imágenes utilizando la variable CSS definida anteriormente. */
+    box-shadow: 0 0px 15px rgba(101, 209, 249, 0.601); /* Esto agrega una sombra a las imágenes, lo que mejora la apariencia visual del sitio web. */
+    display: block; /* Esto hace que las imágenes se comporten como elementos de bloque, lo que mejora la organización del contenido. */
+    margin-bottom: 25px; /* Esto agrega un margen inferior a las imágenes, lo que mejora la separación visual del contenido. */
+}
+
+img:hover{
+    transform: scale(1.05) rotate(6deg); /* Esto aplica una transformación de escala a las imágenes al pasar el cursor sobre ellas, lo que mejora la experiencia del usuario al interactuar con las imágenes. */
+    transition: transform 0.3s ease-in-out; /* Esto agrega una transición suave a la transformación de escala de las imágenes, lo que mejora la experiencia del usuario al interactuar con las imágenes. */
+    filter: brightness(1.1); /* Esto aplica un filtro de brillo a las imágenes al pasar el cursor sobre ellas, lo que mejora la experiencia del usuario al interactuar con las imágenes. */
+}
+
+ul,ol{
+    padding-left: 20px; /* Esto agrega un relleno izquierdo a las listas desordenadas y ordenadas, lo que mejora la separación visual del contenido. */
+    margin-bottom: 20px; /* Esto agrega un margen inferior a las listas desordenadas y ordenadas, lo que mejora la separación visual del contenido. */
+}
+
+li{
+    color: var(--color-texto-secundario); /* Esto establece el color del texto de los elementos de la lista utilizando la variable CSS definida anteriormente. */
+    margin-bottom: 10px; /* Esto agrega un margen inferior a los elementos de la lista, lo que mejora la separación visual del contenido. */
+    font-size: 0.95rem; /* Esto establece el tamaño de fuente de los elementos de la lista, lo que mejora la legibilidad del texto. */
+}
+
+ol li::marker{
+    color: var(--color-primario); /* Esto establece el color de los marcadores de los elementos de la lista ordenada utilizando la variable CSS definida anteriormente. */
+    font-weight: bold; /* Esto establece el grosor de la fuente de los marcadores de los elementos de la lista ordenada, lo que mejora la legibilidad del texto. */
+}
+
+#experiencia{
+    overflow-x: auto; /* Esto permite que el contenido del contenedor de experiencia se desplace horizontalmente si es necesario, lo que mejora la experiencia del usuario al interactuar con el contenido. */
+}
+
+table{
+    width: 100%; /* Esto establece el ancho de la tabla al 100% del contenedor, lo que mejora la organización del contenido. */
+    border-collapse: collapse; /* Esto elimina los espacios entre las celdas de la tabla, lo que mejora la apariencia visual del sitio web. */
+    margin-bottom: 20px; /* Esto agrega un margen inferior a la tabla, lo que mejora la separación visual del contenido. */
+    font-size: 0.9rem; /* Esto establece el tamaño de fuente de la tabla, lo que mejora la legibilidad del texto. */
+    background-color: #11182a; /* Esto establece el color de fondo de la tabla utilizando la variable CSS definida anteriormente. */
+    border-radius: 8px; /* Esto aplica un borde redondeado a la tabla utilizando la variable CSS definida anteriormente. */
+    overflow: hidden; /* Esto oculta cualquier contenido que se desborde del contenedor de la tabla, lo que mejora la apariencia visual del sitio web. */
+}
+
+th, td{
+    padding: 16px 20px; /* Esto agrega un relleno a las celdas de la tabla, lo que mejora la separación visual del contenido. */
+    text-align: left; /* Esto alinea el texto de las celdas de la tabla a la izquierda, lo que mejora la legibilidad del texto. */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Esto agrega un borde inferior semitransparente a las celdas de la tabla, lo que mejora la apariencia visual del sitio web. */
+}
+
+th{
+    background-color: #161739; /* Esto establece el color de fondo de las celdas de encabezado de la tabla utilizando la variable CSS definida anteriormente. */
+    color: var(--color-primario); /* Esto establece el color del texto de las celdas de encabezado de la tabla utilizando la variable CSS definida anteriormente. */
+    font-weight: bold; /* Esto establece el grosor de la fuente de las celdas de encabezado de la tabla, lo que mejora la legibilidad del texto. */
+    text-transform: uppercase; /* Esto transforma el texto de las celdas de encabezado de la tabla a mayúsculas, lo que mejora la apariencia visual del sitio web. */
+    letter-spacing: 1px; /* Esto agrega un espaciado entre letras a las celdas de encabezado de la tabla, lo que mejora la apariencia visual del sitio web. */
+    border-bottom: 2px solid #161739; /* Esto agrega un borde inferior sólido a las celdas de encabezado de la tabla utilizando la variable CSS definida anteriormente. */
+}
+
+td{
+    border-bottom: 1px solid #0b0b19; /* Esto agrega un borde inferior semitransparente a las celdas de la tabla, lo que mejora la apariencia visual del sitio web. */
+    color: var(--color-texto-secundario); /* Esto establece el color del texto de las celdas de la tabla utilizando la variable CSS definida anteriormente. */
+}
+
+tbody tr:nth-child(even){
+    background-color: #141e38; /* Esto establece el color de fondo de las filas pares de la tabla utilizando la variable CSS definida anteriormente. */
+}
+
+form{
+    display: flex; /* Esto establece un diseño flexible para el formulario, lo que permite una mejor organización del contenido. */
+    flex-direction: column; /* Esto establece la dirección de los elementos del formulario en una columna, lo que mejora la organización del contenido. */
+    gap: 20px; /* Esto agrega un espacio de 20 píxeles entre los elementos del formulario, lo que mejora la separación visual del contenido. */
+}
+
+label{
+    font-size: 0.8rem; /* Esto establece el tamaño de fuente de las etiquetas del formulario, lo que mejora la legibilidad del texto. */
+    font-weight: bold; /* Esto establece el grosor de la fuente de las etiquetas del formulario, lo que mejora la legibilidad del texto. */
+    color: var(--color-texto-principal); /* Esto establece el color del texto de las etiquetas del formulario utilizando la variable CSS definida anteriormente. */
+    text-transform: uppercase; /* Esto transforma el texto de las etiquetas del formulario a mayúsculas, lo que mejora la apariencia visual del sitio web. */
+    letter-spacing: 1px; /* Esto agrega un espaciado entre letras a las etiquetas del formulario, lo que mejora la apariencia visual del sitio web. */
+}
+
+input[type="text"], input[type="email"], textarea{
+    padding: 14px 18px; /* Esto agrega un relleno a los campos de entrada del formulario, lo que mejora la separación visual del contenido. */
+    border-radius: 8px; /* Esto aplica un borde redondeado a los campos de entrada del formulario utilizando la variable CSS definida anteriormente. */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Esto agrega un borde semitransparente a los campos de entrada del formulario, lo que mejora la apariencia visual del sitio web. */
+    background-color: var(--color-tarjeta); /* Esto establece el color de fondo de los campos de entrada del formulario utilizando la variable CSS definida anteriormente. */
+    color: var(--color-texto-principal); /* Esto establece el color del texto de los campos de entrada del formulario utilizando la variable CSS definida anteriormente. */
+    font-size: 0.9rem; /* Esto establece el tamaño de fuente de los campos de entrada del formulario, lo que mejora la legibilidad del texto. */
+    width: 100%; /* Esto establece el ancho de los campos de entrada del formulario al 100% del contenedor, lo que mejora la organización del contenido. */
+}
+
+button{
+    background-color: var(--color-primario); /* Esto establece el color de fondo del botón utilizando la variable CSS definida anteriormente. */
+    color: var(--color-texto-principal); /* Esto establece el color del texto del botón utilizando la variable CSS definida anteriormente. */
+    padding: 12px 20px; /* Esto agrega un relleno al botón, lo que mejora la separación visual del contenido. */
+    font-size: 0.9rem; /* Esto establece el tamaño de fuente del botón, lo que mejora la legibilidad del texto. */
+    border: none; /* Esto elimina el borde del botón, lo que mejora la apariencia visual del sitio web. */
+    border-radius: 8px; /* Esto aplica un borde redondeado al botón utilizando la variable CSS definida anteriormente. */
+    cursor: pointer; /* Esto establece el cursor del botón como un puntero, lo que mejora la experiencia del usuario al interactuar con el botón. */
+    transition: background-color 0.3s ease; /* Esto agrega una transición suave al color de fondo del botón, lo que mejora la experiencia del usuario al interactuar con el botón. */
+}
+
+footer{
+    text-align: center; /* Esto centra el texto del pie de página, lo que mejora la apariencia visual del sitio web. */
+    padding: 20px 0; /* Esto agrega un relleno al pie de página, lo que mejora la separación visual del contenido. */
+    color: var(--color-texto-secundario); /* Esto establece el color del texto del pie de página utilizando la variable CSS definida anteriormente. */
+    font-size: 0.8rem; /* Esto establece el tamaño de fuente del pie de página, lo que mejora la legibilidad del texto. */
+    box-shadow: inset 0 2px 4px #3d3f72; /* Esto agrega una sombra interna al pie de página, lo que mejora la apariencia visual del sitio web. */
+    background-color: #1d1e3a; /* Esto establece el color de fondo del pie de página utilizando la variable CSS definida anteriormente. */
+    border-radius: 8px; /* Esto aplica un borde redondeado al pie de página utilizando la variable CSS definida anteriormente. */
+}
+
+footer a{
+    color: var(--color-primario); /* Esto establece el color del texto de los enlaces del pie de página utilizando la variable CSS definida anteriormente. */
+    text-decoration: none; /* Esto elimina el subrayado predeterminado de los enlaces del pie de página, lo que mejora la apariencia visual del sitio web. */
+    font-weight: 600; /* Esto establece el grosor de la fuente de los enlaces del pie de página, lo que mejora la legibilidad del texto. */
+    margin: 0 5px; /* Esto agrega un margen horizontal a los enlaces del pie de página, lo que mejora la separación visual del contenido. */
+}
+
+footer a:hover{
+    color: var(--color-texto-principal); /* Esto cambia el color del texto de los enlaces del pie de página al pasar el cursor sobre ellos, lo que mejora la experiencia del usuario al interactuar con los enlaces. */
+    text-decoration: underline; /* Esto agrega un subrayado a los enlaces del pie de página al pasar el cursor sobre ellos, lo que mejora la experiencia del usuario al interactuar con los enlaces. */
 }
